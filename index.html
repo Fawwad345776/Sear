@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SEAR | Rooftop Restaurant on Tipu Sultan Road, Karachi</title>
-<meta name="description" content="SEAR — rooftop dining with an open kitchen on Tipu Sultan Road, Karachi (above Chai Chatt). Smash burgers, Beef Wellington, Nashville fries. Open daily 5 PM – 12 AM. Call 0326 3259930.">
+<meta name="description" content="SEAR — rooftop dining with an open kitchen on Tipu Sultan Road, Karachi (above Chai Chatt). Steaks, smash burgers, pasta. Open daily 5 PM – 12 AM. Call 0326 3259930.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231b1512'/%3E%3Cpath d='M50 16c10 16 22 24 22 42a22 22 0 0 1-44 0c0-10 6-16 10-22 2 8 6 12 10 12-4-12 0-22 2-32z' fill='%23ff6a2b'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --char:#1b1512; --char2:#2a211c; --ember:#ff6a2b; --ember2:#ff9a3d; --plum:#3a1d3f;
@@ -78,6 +78,19 @@
   .dish .lb{display:inline-block;margin-top:14px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ember2)}
   .menu-cta{margin-top:40px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;color:#c9b9ab}
 
+  #menu{background:radial-gradient(circle at 20% 0%,#5a1f1a,transparent 50%),#3a1512;color:#f4e6d6}
+  .mhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+  .fsg{font-size:.75rem;letter-spacing:.2em;color:#e9b98a;text-transform:uppercase;font-weight:600}
+  .mgrid{columns:2 340px;column-gap:60px;margin-top:30px}
+  .mcat{break-inside:avoid;margin-bottom:46px}
+  .mcat h3{font-family:Manrope,sans-serif;font-size:.85rem;letter-spacing:.24em;text-transform:uppercase;color:#e9b98a;font-weight:700;padding-bottom:10px;border-bottom:1px solid rgba(233,185,138,.3);margin-bottom:10px}
+  .mi{padding:12px 0}
+  .mt{display:flex;align-items:baseline;gap:10px}
+  .mn{font-family:"Pinyon Script","Great Vibes",cursive;font-size:1.75rem;line-height:1.15;color:#fff3e6}
+  .mt i{flex:1;border-bottom:1px dotted rgba(244,230,214,.25);transform:translateY(-6px)}
+  .mt b{font-weight:700;white-space:nowrap;color:#e9b98a}
+  .mi p{color:#cdb6a4;font-size:.88rem;margin-top:2px;max-width:92%}
+  .mnote{color:#cdb6a4;font-size:.88rem}
   /* reserve */
   .reserve{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
   form{background:#fff;border-radius:28px;padding:32px;border:1px solid var(--line);box-shadow:0 24px 60px rgba(60,30,10,.1)}
@@ -119,7 +132,7 @@
   <div class="wrap">
     <a href="#" class="logo"><svg viewBox="0 0 24 24"><path d="M12 2c2.5 4 5.5 6 5.5 10.5a5.5 5.5 0 0 1-11 0c0-2.5 1.5-4 2.5-5.5.5 2 1.5 3 2.5 3-1-3 0-5.5.5-8z" fill="#ff6a2b"/></svg>SEAR</a>
     <div class="links">
-      <a href="#dishes">Food</a>
+      <a href="#menu">Menu</a>
       <a href="#reserve">Reserve</a>
       <a href="#visit">Visit</a>
       <a href="tel:+923263259930" class="btn btn-ember nav-cta">📞 Call</a>
@@ -142,8 +155,8 @@
   <div class="wrap">
     <span class="pill"><span class="dot" id="dot"></span><span id="live">Open daily 5 PM – 12 AM</span></span>
     <h1>SEAR</h1>
-    <div class="tl">Rooftop dining. Open kitchen. Seared to perfection.</div>
-    <p>Smash burgers, Beef Wellington and loaded fries — cooked right in front of you, under the Karachi sky on Tipu Sultan Road.</p>
+    <div class="tl">Fire • Smoke • Grill — on the rooftop.</div>
+    <p>Steaks, smash burgers and pasta — flame-grilled right in front of you, under the Karachi sky on Tipu Sultan Road.</p>
     <div class="ctas">
       <a href="#reserve" class="btn btn-ember">Reserve a Table</a>
       <a href="#dishes" class="btn btn-glass">See the Food</a>
@@ -168,20 +181,21 @@
   <div class="wrap">
     <span class="tag">Guest favourites</span>
     <h2 class="title reveal">What people are loving</h2>
-    <p class="sub reveal">Straight from our guests' reviews — start with these.</p>
+    <p class="sub reveal">Guest favourites and chef signatures — start with these.</p>
     <div class="dishes">
-      <div class="dish reveal"><div class="em">🍔</div><h3>Double Smash Glaze Burger</h3><p>Two crispy-edged smashed patties with a sticky glaze. The crowd favourite.</p><span class="lb">Must try</span></div>
-      <div class="dish reveal"><div class="em">🥩</div><h3>Beef Wellington</h3><p>Tender beef wrapped in golden pastry — a showstopper plate.</p><span class="lb">Signature</span></div>
-      <div class="dish reveal"><div class="em">🍟</div><h3>Nashville Fries</h3><p>Loaded fries with a hot Nashville kick. Guests rate them a solid 10/10.</p><span class="lb">Fan favourite</span></div>
-      <div class="dish reveal"><div class="em">🍝</div><h3>Alfredo Pasta</h3><p>Rich, creamy and comforting — the perfect side to share.</p></div>
-      <div class="dish reveal"><div class="em">🍗</div><h3>Stuffed Chicken</h3><p>Juicy chicken breast with a flavourful filling, cooked to order.</p></div>
+      <div class="dish reveal"><div class="em">🍔</div><h3>Double Smash Glaze Burger</h3><p>Two crispy-edged smashed patties, double cheese and glossy Sear sauce. The crowd favourite. Rs 1,695</p><span class="lb">Must try</span></div>
+      <div class="dish reveal"><div class="em">🥩</div><h3>Porterhouse Steak</h3><p>Filet and New York strip on the bone, flame-grilled over open fire. Rs 4,195</p><span class="lb">Signature</span></div>
+      <div class="dish reveal"><div class="em">🍗</div><h3>Nashville Hot Chicken</h3><p>Double-crusted buttermilk chicken in fiery cayenne oil. Rs 1,395</p><span class="lb">Fan favourite</span></div>
+      <div class="dish reveal"><div class="em">🍝</div><h3>Gigi Hadid Pasta</h3><p>The viral creamy tomato-rose pasta, made the Sear way. Rs 1,595</p></div>
+      <div class="dish reveal"><div class="em">🍖</div><h3>Turkish Beef Shank</h3><p>Slow-braised with Turkish spices — a feast for the table. Rs 5,995</p><span class="lb">Showstopper</span></div>
     </div>
     <div class="menu-cta reveal">
-      <span>Want the full menu & prices?</span>
-      <a href="https://wa.me/923263259930?text=Hi%20SEAR%2C%20could%20you%20please%20share%20your%20menu%3F" target="_blank" rel="noopener" class="btn btn-ember">Get Menu on WhatsApp</a>
+      <a href="#menu" class="btn btn-ember">See Full Menu</a>
     </div>
   </div>
 </section>
+
+<section id="menu"><div class="wrap"><div class="mhead"><span class="tag" style="color:#e9b98a">The Menu</span><span class="fsg">Fire • Smoke • Grill</span></div><h2 class="title reveal" style="color:#f4e6d6">Full Menu</h2><div class="mgrid"><div class="mcat reveal"><h3>Starters</h3><div class="mi"><div class="mt"><span class="mn">Beef Short Rib</span><i></i><b>Rs 1,495</b></div><p>Slow-braised till fork-tender, with a rich beef glaze.</p></div><div class="mi"><div class="mt"><span class="mn">Firecracker Dynamite Chicken</span><i></i><b>Rs 1,295</b></div><p>Crispy chicken in a sticky sweet-and-spicy honey glaze.</p></div><div class="mi"><div class="mt"><span class="mn">Sear Nachos</span><i></i><b>Rs 1,595</b></div><p>A loaded skillet with beef chili, cheddar fondue and jalapeños.</p></div></div><div class="mcat reveal"><h3>Signature</h3><div class="mi"><div class="mt"><span class="mn">Porterhouse Steak</span><i></i><b>Rs 4,195</b></div><p>Filet and strip on the bone, flame-grilled. Two sides & sauces.</p></div><div class="mi"><div class="mt"><span class="mn">Gnocchi with Bacon Wrap Chicken</span><i></i><b>Rs 2,195</b></div><p>Potato gnocchi in garlic basil cream with bacon-wrapped chicken.</p></div><div class="mi"><div class="mt"><span class="mn">Turkish Beef Shank</span><i></i><b>Rs 5,995</b></div><p>Slow-braised with Turkish spices until meltingly tender.</p></div></div><div class="mcat reveal"><h3>Steak Collection</h3><div class="mi"><div class="mt"><span class="mn">Filet Mignon</span><i></i><b>Rs 3,195</b></div><p>Center-cut tenderloin with herb butter.</p></div><div class="mi"><div class="mt"><span class="mn">Chimichurri-Crusted Steak</span><i></i><b>Rs 3,195</b></div><p>Herb-rubbed, flame-grilled, with garlic potatoes.</p></div><div class="mi"><div class="mt"><span class="mn">Classic Grilled Ribeye</span><i></i><b>Rs 4,395</b></div></div><div class="mi"><div class="mt"><span class="mn">Classic Grilled Tenderloin</span><i></i><b>Rs 2,995</b></div><p>Sauce: peppercorn, mushroom cream, Dijon cream, chimichurri or Café de Paris butter.</p></div></div><div class="mcat reveal"><h3>Chicken Signatures</h3><div class="mi"><div class="mt"><span class="mn">Chicken Parmesan</span><i></i><b>Rs 1,895</b></div><p>Panko-crusted, marinara and mozzarella, on a sizzling platter.</p></div><div class="mi"><div class="mt"><span class="mn">Grilled Chicken, Choice of Sauce</span><i></i><b>Rs 1,795</b></div><p>Open-flame grilled. Sides: truffle fries, mash, vegetables or honey lime carrots.</p></div></div><div class="mcat reveal"><h3>Pasta & Italian</h3><div class="mi"><div class="mt"><span class="mn">Crispy Honey Chili Chicken Pasta</span><i></i><b>Rs 1,795</b></div><p>Penne in sun-dried tomato Alfredo with honey-chili crispy chicken.</p></div><div class="mi"><div class="mt"><span class="mn">Gigi Hadid Famous Pasta</span><i></i><b>Rs 1,595</b></div><p>The viral creamy tomato-rose pasta with a chili kick.</p></div><div class="mi"><div class="mt"><span class="mn">Moroccan Chicken Pasta</span><i></i><b>Rs 1,595</b></div><p>Fettuccine in a smoky Moroccan cream with grilled chicken.</p></div><div class="mi"><div class="mt"><span class="mn">Classic Chicken Alfredo</span><i></i><b>Rs 1,595</b></div><p>Fettuccine in rich Parmesan cream sauce.</p></div></div><div class="mcat reveal"><h3>Signature Burgers</h3><div class="mi"><div class="mt"><span class="mn">Double Smash Glaze Burger</span><i></i><b>Rs 1,695</b></div><p>Two crispy-edged patties, double cheese, pickles, Sear sauce.</p></div><div class="mi"><div class="mt"><span class="mn">Smoked BBQ Brisket Burger</span><i></i><b>Rs 1,595</b></div><p>Smash patties with 12-hour smoked brisket and onion jam.</p></div><div class="mi"><div class="mt"><span class="mn">Ultra Crunch Nashville Hot Chicken</span><i></i><b>Rs 1,395</b></div><p>Buttermilk chicken thigh in fiery cayenne oil.</p></div><div class="mi"><div class="mt"><span class="mn">Honey & Garlic Chicken Hot Burger</span><i></i><b>Rs 1,395</b></div><p>Crispy fillet in honey-garlic glaze on brioche.</p></div><div class="mi"><div class="mt"><span class="mn">Chicken, Cheese & Pesto Croissant</span><i></i><b>Rs 1,595</b></div><p>Crispy tenders, mozzarella and basil pesto in a buttery croissant.</p></div></div></div><p class="mnote">Prices in PKR, taxes may apply. Prices may change — confirm when ordering.</p></div></section>
 
 <section id="reserve">
   <div class="wrap reserve">
