@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SEAR | Rooftop Restaurant on Tipu Sultan Road, Karachi</title>
 <meta name="description" content="SEAR — rooftop dining with an open kitchen on Tipu Sultan Road, Karachi (above Chai Chatt). Steaks, smash burgers, pasta. Open daily 5 PM – 12 AM. Call 0326 3259930.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231b1512'/%3E%3Cpath d='M50 16c10 16 22 24 22 42a22 22 0 0 1-44 0c0-10 6-16 10-22 2 8 6 12 10 12-4-12 0-22 2-32z' fill='%23ff6a2b'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%233a1512'/%3E%3Cpath d='M50 16c10 16 22 24 22 42a22 22 0 0 1-44 0c0-10 6-16 10-22 2 8 6 12 10 12-4-12 0-22 2-32z' fill='%23e0a565'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:wght@500;600;700&family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --char:#1b1512; --char2:#2a211c; --ember:#ff6a2b; --ember2:#ff9a3d; --plum:#3a1d3f;
@@ -124,6 +124,44 @@
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
   .reveal.in{opacity:1;transform:none}
   @media(max-width:480px){.g2{grid-template-columns:1fr}form{padding:24px}.hero{min-height:auto}.hero .wrap{padding-top:100px;padding-bottom:150px}.skyline{height:120px}.hero h1{font-size:4.6rem}.hero .tl{font-size:1.15rem}.hero p{font-size:1rem}.ctas .btn{padding:12px 20px;font-size:.9rem}.sun{bottom:60px;width:300px}}
+
+  /* ===== Sear brand theme (maroon + copper, matches menu) ===== */
+  :root{--ember:#b8743f;--ember2:#e0a565;--stone:#f7efe6;--stone2:#f0e3d4;--char:#2a0f0d;--char2:#3a1512}
+  h2,h3,.title{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;letter-spacing:0}
+  .title{font-size:clamp(2.6rem,6vw,4.2rem)}
+  .hero{background:
+      radial-gradient(circle at 75% 35%, rgba(224,165,101,.28), transparent 45%),
+      radial-gradient(circle at 15% 90%, rgba(150,45,30,.45), transparent 50%),
+      linear-gradient(180deg,#1c0a09 0%,#3a1512 55%,#4d1b15 100%)}
+  .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(244,230,214,.5) 1px,transparent 1.4px);background-size:38px 38px;opacity:.05}
+  .sun{background:radial-gradient(circle,rgba(240,190,120,.55) 0%,rgba(200,120,60,.25) 40%,rgba(200,120,60,0) 70%);opacity:.8;filter:blur(8px)}
+  .skyline path:first-child{fill:#160807;opacity:.75}
+  .skyline path:nth-child(2),.skyline g:first-of-type{fill:#120605}
+  .skyline g:last-of-type{fill:#f3c98b}
+  .eb{display:block;margin-top:22px;font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:#e9b98a;font-weight:600}
+  .hero h1{font-family:"Pinyon Script",cursive;font-weight:400;font-size:clamp(5.2rem,15vw,9.5rem);letter-spacing:0;line-height:1.05;color:#f8ebdc;margin:6px 0 4px;text-shadow:0 6px 30px rgba(0,0,0,.35)}
+  .hero .tl{font-family:Manrope,sans-serif;font-size:.9rem;letter-spacing:.32em;text-transform:uppercase;color:#e9b98a;font-weight:600;margin:4px 0 20px}
+  .hero p{color:#ecdccb}
+  .pill{background:rgba(0,0,0,.3);border-color:rgba(233,185,138,.35)}
+  .btn-ember{background:linear-gradient(135deg,#b8743f,#e0a565);color:#1c0a09;box-shadow:0 10px 26px rgba(184,116,63,.35)}
+  .btn-glass{border-color:rgba(233,185,138,.55);color:#f4e6d6}
+  .logo{color:#f8ebdc;letter-spacing:.14em;font-size:1.4rem}
+  .logo svg path{fill:#e0a565}
+  nav.solid{background:rgba(28,10,9,.95)}
+  .tag{color:#a8652f}
+  .why div{border-top:3px solid #b8743f}
+  .why .ic{background:#f3e2cf}
+  #dishes{background:#2a0f0d}
+  .dish{background:#3a1512;border-color:#4e2420}
+  .dish:hover{border-color:#e0a565}
+  .dish::after{background:radial-gradient(circle,rgba(224,165,101,.28),transparent 70%)}
+  .dish h3{font-size:1.7rem}
+  .dish .lb{color:#e0a565}
+  input:focus,select:focus,textarea:focus{outline-color:#b8743f}
+  .btn-dark{background:#3a1512}
+  footer{background:#1c0a09}
+  footer b{font-family:"Pinyon Script",cursive;font-size:1.6rem;letter-spacing:0;font-weight:400;color:#f4e6d6}
+  @media(max-width:480px){.hero h1{font-size:5.4rem}.hero .tl{font-size:.78rem;letter-spacing:.26em}.eb{font-size:.68rem;letter-spacing:.2em}}
 </style>
 </head>
 <body>
@@ -154,8 +192,9 @@
   </div>
   <div class="wrap">
     <span class="pill"><span class="dot" id="dot"></span><span id="live">Open daily 5 PM – 12 AM</span></span>
-    <h1>SEAR</h1>
-    <div class="tl">Fire • Smoke • Grill — on the rooftop.</div>
+    <span class="eb">Rooftop · Tipu Sultan Road</span>
+    <h1>Sear</h1>
+    <div class="tl">Fire &nbsp;•&nbsp; Smoke &nbsp;•&nbsp; Grill</div>
     <p>Steaks, smash burgers and pasta — flame-grilled right in front of you, under the Karachi sky on Tipu Sultan Road.</p>
     <div class="ctas">
       <a href="#reserve" class="btn btn-ember">Reserve a Table</a>
