@@ -38,13 +38,13 @@
   @media(max-width:780px){.links a:not(.btn){display:none}}
 
   /* hero: rooftop sunset */
-  .hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;color:#fff;
+  .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden;color:#fff;
     background:linear-gradient(180deg,#2b1640 0%,#6b2a4a 32%,#d9533a 62%,#ff9a3d 82%,#ffc46b 100%)}
   .sun{position:absolute;left:50%;bottom:18%;width:min(60vw,420px);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;
     background:radial-gradient(circle,#ffe3a1 0%,#ffb54d 45%,rgba(255,140,60,0) 70%);filter:blur(2px);opacity:.9}
-  .skyline{position:absolute;left:0;right:0;bottom:0;height:34%}
+  .skyline{position:absolute;left:0;right:0;bottom:0;height:220px}
   .skyline svg{width:100%;height:100%;display:block}
-  .hero .wrap{position:relative;z-index:2;padding-bottom:12vh;padding-top:110px;width:100%}
+  .hero .wrap{position:relative;z-index:2;padding-bottom:250px;padding-top:120px;width:100%}
   .pill{display:inline-flex;align-items:center;gap:8px;background:rgba(27,21,18,.45);border:1px solid rgba(255,255,255,.25);padding:7px 15px;border-radius:999px;font-size:.85rem;font-weight:600;backdrop-filter:blur(6px)}
   .dot{width:9px;height:9px;border-radius:50%;background:#bbb}.dot.on{background:#3ee07a;box-shadow:0 0 10px #3ee07a}
   .hero h1{font-weight:800;font-size:clamp(5rem,22vw,13rem);letter-spacing:.06em;margin:16px 0 0;text-shadow:0 10px 50px rgba(0,0,0,.25)}
@@ -123,7 +123,7 @@
   .fab svg{width:30px;height:30px;fill:#fff}
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
   .reveal.in{opacity:1;transform:none}
-  @media(max-width:480px){.g2{grid-template-columns:1fr}form{padding:24px}.hero .wrap{padding-bottom:16vh}}
+  @media(max-width:480px){.g2{grid-template-columns:1fr}form{padding:24px}.hero{min-height:auto}.hero .wrap{padding-top:100px;padding-bottom:150px}.skyline{height:120px}.hero h1{font-size:4.6rem}.hero .tl{font-size:1.15rem}.hero p{font-size:1rem}.ctas .btn{padding:12px 20px;font-size:.9rem}.sun{bottom:60px;width:300px}}
 </style>
 </head>
 <body>
@@ -143,7 +143,7 @@
 <header class="hero">
   <div class="sun"></div>
   <div class="skyline" aria-hidden="true">
-    <svg viewBox="0 0 1200 300" preserveAspectRatio="none">
+    <svg viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice">
       <path d="M0 300V190h60v-40h40v60h50v-90h70v70h40v-40h60v100h50v-130h80v80h40v-50h50v70h60v-110h70v90h40v-60h60v80h50v-120h80v100h40v-40h60v60h50v-70h60V300z" fill="#2a1a24" opacity=".55"/>
       <path d="M0 300V230h1200v70z" fill="#1b1512"/>
       <g fill="#1b1512"><rect x="0" y="222" width="1200" height="8"/>
